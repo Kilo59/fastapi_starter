@@ -32,6 +32,10 @@ classifiers = [
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
+# formatting
+black = "^19.10b0"
+isort = "^4.3.21"
+
 mypy = "^0.770"
 
 wemake-python-styleguide = "^0.14.0"
@@ -40,13 +44,18 @@ nitpick = "^0.22"
 
 safety = "^1.9"
 
+pre-commit = "^2.3.0"
+
+# Testing
 pytest = "^5.4"
+pytest-asyncio = "^0.11.0"
 pytest-cov = "^2.7"
 pytest-randomly = "^3.3"
 
-sphinx = "^2.2"
-sphinx-autodoc-typehints = "<1.11"
-doc8 = "^0.8"
-m2r = "^0.2"
-tomlkit = "^0.6"
-pytest-asyncio = "^0.11.0"
+[tool.isort]
+known_third_party = ["pytest"]
+multi_line_output = 3
+include_trailing_comma = "True"
+force_grid_wrap = 0
+use_parentheses = "True"
+line_length = 88
