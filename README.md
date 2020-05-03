@@ -4,6 +4,7 @@
 [![Coverage](https://coveralls.io/repos/github/wemake.services/fastapi-starter/badge.svg?branch=master)](https://coveralls.io/github/wemake.services/fastapi-starter?branch=master)
 [![Python Version](https://img.shields.io/pypi/pyversions/fastapi-starter.svg)](https://pypi.org/project/fastapi-starter/)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 FastAPI starter app.
 
