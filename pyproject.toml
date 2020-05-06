@@ -3,10 +3,6 @@ requires = ["poetry>=1.0"]
 build-backend = "poetry.masonry.api"
 
 
-[tool.nitpick]
-style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
-
-
 [tool.poetry]
 name = "fastapi-starter"
 version = "0.1.0"
@@ -51,6 +47,9 @@ pytest = "^5.4"
 pytest-asyncio = "^0.11.0"
 pytest-cov = "^2.7"
 pytest-randomly = "^3.3"
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
 
 [tool.isort]
 known_third_party = ["pytest"]
