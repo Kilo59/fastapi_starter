@@ -26,6 +26,9 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+python-multipart = "^0.0.5"
+uvicorn = "^0.11.5"
+fastapi = "^0.54.1"
 
 [tool.poetry.dev-dependencies]
 # formatting
@@ -52,7 +55,7 @@ pytest-randomly = "^3.3"
 style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
 
 [tool.isort]
-known_third_party = ["pytest"]
+known_third_party = ["fastapi", "pydantic", "pytest", "uvicorn"]
 multi_line_output = 3
 include_trailing_comma = "True"
 force_grid_wrap = 0
