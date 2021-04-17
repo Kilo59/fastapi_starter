@@ -1,4 +1,3 @@
-import uvicorn
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel
@@ -93,7 +92,3 @@ async def read_users_me(current_user: User = Depends(get_current_active_user)):
 async def root():
     """API root."""
     return {"message": "Hello World"}
-
-
-if __name__ == "__main__":
-    pass
